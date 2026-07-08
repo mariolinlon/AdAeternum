@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846089443553",
+    "project_id": "adaeternum-6123a",
+    "storage_bucket": "adaeternum-6123a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846089443553:android:79e205898b271d35377fa0",
+        "android_client_info": {
+          "package_name": "com.mfm.adaeternum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBphLjIqsxJSI7Y0QxrjAif60RDwVA1iC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

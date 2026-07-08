@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Usuario/AppData/Local/Temp/**)",
+      "Read(//c/Users/Usuario/AppData/Local/Temp/Unity/**)",
+      "Bash(python -m PyInstaller --onefile --noconsole --name \"Polymarket Bot\" app.py)",
+      "Bash(python -m PyInstaller --onefile --noconsole --name \"Polymarket Bot\" --add-data \"config.py;.\" app.py)",
+      "Bash(copy \"D:\\\\bots\\\\polymarket-bot_1\\\\polymarket-bot\\\\.env\" \"D:\\\\bots\\\\polymarket-bot_1\\\\polymarket-bot\\\\dist\\\\.env\")",
+      "Bash(python -c ' *)",
+      "PowerShell(Get-ChildItem \"$env:APPDATA\\\\Claude\\\\logs\" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 5; Get-ChildItem \"$env:USERPROFILE\\\\.claude\\\\logs\" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 5)",
+      "mcp__mcp-unity__get_console_logs",
+      "mcp__mcp-unity__get_scene_info",
+      "mcp__mcp-unity__get_gameobject"
+    ]
+  }
+}

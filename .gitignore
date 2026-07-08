@@ -1,0 +1,77 @@
+# ==========================================================
+#  .gitignore para proyecto Unity — Ad Aeternum
+# ==========================================================
+
+# --- Carpetas generadas por Unity (NO deben subirse) ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# --- Archivos de proyecto autogenerados (IDE / compilador) ---
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.vscode/
+.idea/
+
+# --- Paquetes / builds / binarios grandes ---
+*.apk
+*.aab
+*.app
+*.unitypackage
+sysinfo.txt
+crashlytics-build.properties
+AdAeternum_Alpha.zip
+*.zip
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Binarios de Firebase >100 MB (superan el límite de GitHub; se reimportan desde el Firebase Unity SDK) ---
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-*.bundle
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-*.so
+
+# --- Paquetes .unitypackage sueltos (instaladores, no necesarios en el repo) ---
+*.unitypackage
+
+# --- Documentación del TFG y material que NO es código del juego ---
+#   (lo ideal es MOVER estas carpetas fuera del proyecto; mientras tanto,
+#    se excluyen del repositorio para no subir cientos de MB de basura)
+TFG/
+registro/
+PreviewMusica/
+*.docx
+*.pdf
+*.xlsx
+_build_gantt.py
+Diagrama_Gantt_AdAeternum.*
+/prefabInsignia.prefab
+/prefabMedalla.prefab
+
+# --- IMPORTANTE: no subir estos temporales, PERO sí los .meta ---
+# (Unity NECESITA que se suban los archivos .meta de Assets/ — no los ignores)
+
+# --- Secretos de Firebase ---
+#   Si el repositorio va a ser PÚBLICO, descomenta estas líneas para NO
+#   exponer la configuración de tu proyecto Firebase:
+# **/google-services.json
+# **/google-services-desktop.json
+# **/GoogleService-Info.plist
