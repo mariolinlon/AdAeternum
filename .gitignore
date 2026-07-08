@@ -17,6 +17,7 @@
 *.csproj
 *.unityproj
 *.sln
+*.slnx
 *.suo
 *.user
 *.userprefs
@@ -30,6 +31,7 @@
 .vs/
 .vscode/
 .idea/
+.claude/
 
 # --- Paquetes / builds / binarios grandes ---
 *.apk
@@ -72,6 +74,10 @@ Diagrama_Gantt_AdAeternum.*
 # --- Secretos de Firebase ---
 #   Si el repositorio va a ser PÚBLICO, descomenta estas líneas para NO
 #   exponer la configuración de tu proyecto Firebase:
-# **/google-services.json
-# **/google-services-desktop.json
-# **/GoogleService-Info.plist
+**/google-services.json
+**/google-services-desktop.json
+**/GoogleService-Info.plist
+
+# --- Notas internas de trabajo (no forman parte del entregable) ---
+BITACORA_CLAUDE.md
+CLAUDE.md
