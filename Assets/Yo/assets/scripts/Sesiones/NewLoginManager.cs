@@ -90,7 +90,7 @@ public void BotonLoginProfesor()
         else
         {
             
-            textoerror.text ="Usuario o Contraseña incorrectos.";
+            textoerror.text = string.IsNullOrEmpty(mensaje) ? "No se pudo iniciar sesión." : mensaje;
             AudioManager.PlaySFX(AudioManager.SFX.ToastError);
         }
     });
@@ -146,7 +146,7 @@ public void BotonLoginAlumno()
         }
         else
         {
-            textoerror.text ="Usuario o Contraseña incorrectos.";
+            textoerror.text = string.IsNullOrEmpty(mensaje) ? "No se pudo iniciar sesión." : mensaje;
             AudioManager.PlaySFX(AudioManager.SFX.ToastError);
         }
     });
